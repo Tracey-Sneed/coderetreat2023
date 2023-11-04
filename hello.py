@@ -1,6 +1,9 @@
 
 def main():
   print("Hello Welcome to Code Retreat 2023")
-
-if __name__ == "__main__":
-  main
+  name = input("What is your name?")
+  try:
+    print(f"Hello {name}!, welcome to Code Retreat 2023")
+  except ValueError:
+    print("invalid input")
+    pass
